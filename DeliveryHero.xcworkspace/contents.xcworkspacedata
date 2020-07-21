@@ -5,10 +5,10 @@
       location = "container:DeliveryHero/DeliveryHero.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:DeliveryHeroData">
+      location = "group:DeliveryHeroDomain">
    </FileRef>
    <FileRef
-      location = "group:DeliveryHeroDomain">
+      location = "group:DeliveryHeroData">
    </FileRef>
    <FileRef
       location = "group:UICore">
