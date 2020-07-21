@@ -17,6 +17,11 @@
 		8A25616024C67C3B0079E12E /* KingfisherDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 8A25615E24C67C3B0079E12E /* KingfisherDynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8A25616224C67C3B0079E12E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8A25616124C67C3B0079E12E /* Kingfisher */; };
 		8A25616424C67C3B0079E12E /* KingfisherStatic in Frameworks */ = {isa = PBXBuildFile; productRef = 8A25616324C67C3B0079E12E /* KingfisherStatic */; };
+		8A25616824C6D1040079E12E /* DeliveryHeroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25616724C6D1030079E12E /* DeliveryHeroData.swift */; };
+		8A25616D24C6D2550079E12E /* DeliveryHeroDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 8A25616C24C6D2550079E12E /* DeliveryHeroDomain */; };
+		8A25616F24C6D2590079E12E /* UICore in Frameworks */ = {isa = PBXBuildFile; productRef = 8A25616E24C6D2590079E12E /* UICore */; };
+		8A25619E24C6D6D70079E12E /* DeliveryHeroData in Frameworks */ = {isa = PBXBuildFile; productRef = 8A25619D24C6D6D70079E12E /* DeliveryHeroData */; };
+		8A2561A124C6E1620079E12E /* String + md5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2561A024C6E1620079E12E /* String + md5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +47,8 @@
 		8A25614E24C65E2D0079E12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A25615124C65E2D0079E12E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A25615324C65E2D0079E12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A25616724C6D1030079E12E /* DeliveryHeroData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryHeroData.swift; sourceTree = "<group>"; };
+		8A2561A024C6E1620079E12E /* String + md5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + md5.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,9 +56,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A25619E24C6D6D70079E12E /* DeliveryHeroData in Frameworks */,
 				8A25616224C67C3B0079E12E /* Kingfisher in Frameworks */,
 				8A25615F24C67C3B0079E12E /* KingfisherDynamic in Frameworks */,
 				8A25616424C67C3B0079E12E /* KingfisherStatic in Frameworks */,
+				8A25616D24C6D2550079E12E /* DeliveryHeroDomain in Frameworks */,
+				8A25616F24C6D2590079E12E /* UICore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +73,7 @@
 			children = (
 				8A25614424C65E270079E12E /* DeliveryHero */,
 				8A25614324C65E270079E12E /* Products */,
+				8A25616924C6D2510079E12E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,9 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				8A25615A24C6661A0079E12E /* SuportingFiles */,
+				8A25616624C6D0D80079E12E /* DependenciesInjection */,
 				8A25615924C6660D0079E12E /* Modules */,
-				8A25614924C65E270079E12E /* ViewController.swift */,
-				8A25614B24C65E270079E12E /* Main.storyboard */,
+				8A25619F24C6E1440079E12E /* FoundationExtensions */,
 				8A25614E24C65E2D0079E12E /* Assets.xcassets */,
 				8A25615024C65E2D0079E12E /* LaunchScreen.storyboard */,
 			);
@@ -108,8 +119,33 @@
 		8A25615B24C66EAF0079E12E /* Heroes */ = {
 			isa = PBXGroup;
 			children = (
+				8A25614924C65E270079E12E /* ViewController.swift */,
+				8A25614B24C65E270079E12E /* Main.storyboard */,
 			);
 			path = Heroes;
+			sourceTree = "<group>";
+		};
+		8A25616624C6D0D80079E12E /* DependenciesInjection */ = {
+			isa = PBXGroup;
+			children = (
+				8A25616724C6D1030079E12E /* DeliveryHeroData.swift */,
+			);
+			path = DependenciesInjection;
+			sourceTree = "<group>";
+		};
+		8A25616924C6D2510079E12E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A25619F24C6E1440079E12E /* FoundationExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A2561A024C6E1620079E12E /* String + md5.swift */,
+			);
+			path = FoundationExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +169,9 @@
 				8A25615E24C67C3B0079E12E /* KingfisherDynamic */,
 				8A25616124C67C3B0079E12E /* Kingfisher */,
 				8A25616324C67C3B0079E12E /* KingfisherStatic */,
+				8A25616C24C6D2550079E12E /* DeliveryHeroDomain */,
+				8A25616E24C6D2590079E12E /* UICore */,
+				8A25619D24C6D6D70079E12E /* DeliveryHeroData */,
 			);
 			productName = DeliveryHero;
 			productReference = 8A25614224C65E270079E12E /* DeliveryHero.app */;
@@ -193,7 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A25614A24C65E270079E12E /* ViewController.swift in Sources */,
+				8A25616824C6D1040079E12E /* DeliveryHeroData.swift in Sources */,
 				8A25614624C65E270079E12E /* AppDelegate.swift in Sources */,
+				8A2561A124C6E1620079E12E /* String + md5.swift in Sources */,
 				8A25614824C65E270079E12E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +458,18 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8A25615D24C67C3A0079E12E /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = KingfisherStatic;
+		};
+		8A25616C24C6D2550079E12E /* DeliveryHeroDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DeliveryHeroDomain;
+		};
+		8A25616E24C6D2590079E12E /* UICore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UICore;
+		};
+		8A25619D24C6D6D70079E12E /* DeliveryHeroData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DeliveryHeroData;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
