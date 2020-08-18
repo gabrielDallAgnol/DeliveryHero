@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:DeliveryHero.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DeliveryHeroData">
+   </FileRef>
+   <FileRef
+      location = "group:DeliveryHeroDomain">
+   </FileRef>
+   <FileRef
+      location = "group:UICore">
+   </FileRef>
+</Workspace>
